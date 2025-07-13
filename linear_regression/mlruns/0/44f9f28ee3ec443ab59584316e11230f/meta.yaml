@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ale/git/MLOps/linear_regression/mlruns/0/44f9f28ee3ec443ab59584316e11230f/artifacts
+end_time: 1752389132294
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 44f9f28ee3ec443ab59584316e11230f
+run_name: vaunted-zebra-821
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752389130235
+status: 3
+tags: []
+user_id: ale
