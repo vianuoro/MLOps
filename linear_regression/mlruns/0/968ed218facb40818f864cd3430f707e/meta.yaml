@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ale/git/MLOps/linear_regression/mlruns/0/968ed218facb40818f864cd3430f707e/artifacts
+deleted_time: 1752350573786
+end_time: 1752350394737
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 968ed218facb40818f864cd3430f707e
+run_name: adaptable-cat-8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752350391851
+status: 3
+tags: []
+user_id: ale

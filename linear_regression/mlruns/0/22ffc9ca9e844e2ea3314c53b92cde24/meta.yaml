@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ale/git/MLOps/linear_regression/mlruns/0/22ffc9ca9e844e2ea3314c53b92cde24/artifacts
+end_time: 1752350588170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 22ffc9ca9e844e2ea3314c53b92cde24
+run_name: suave-cod-668
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752350585479
+status: 3
+tags: []
+user_id: ale
