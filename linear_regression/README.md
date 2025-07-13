@@ -1,12 +1,11 @@
-## Train model
+## Train the model and start mlflow ui
 python3 train_model.py
-
-## Launch MLFlow UI and list the runs
 mlflow ui &
+## list the trained model and serve it
 ls mlruns/0/
-
-## Serve the model trained
 mlflow models serve -m runs:/<RUN-ID-1>/model -p 1234 &
+
+## USE API to make a prediction from two values
 curl -X POST http://127.0.0.1:1234/invocations   -H "Content-Type: application/json"   -d '{
         "dataframe_split": {
           "columns": ["feature_0"],
@@ -14,11 +13,25 @@ curl -X POST http://127.0.0.1:1234/invocations   -H "Content-Type: application/j
         }
       }'
 
-## Add to MLFlow Model Registry and Serve its 3rd version
+## Make three more models and register them in mlflow registry
+python3 train_model.py
+ls mlruns/0/
 python register_model.py <RUN-ID-2> LinearRegressionModel
+python3 train_model.py
+ls mlruns/0/
 python register_model.py <RUN-ID-3> LinearRegressionModel
+python3 train_model.py
+ls mlruns/0/
 python register_model.py <RUN-ID-4> LinearRegressionModel
+Visit http://127.0.0.1:5000/#/models/LinearRegressionModel
 
-mlflow models serve -m "models:/LinearRegressionModel/3" -p 5001 &
+## Serve the fourth version of the model
+mlflow models serve -m "models:/LinearRegressionModel/4" -p 1235 &
 
-## Ask for a prediction on a specific version of a specific model
+## USE API to make a prediction from two values
+curl -X POST http://127.0.0.1:1235/invocations   -H "Content-Type: application/json"   -d '{
+        "dataframe_split": {
+          "columns": ["feature_0"],
+          "data": [[0.5], [0.2]]
+        }
+      }'

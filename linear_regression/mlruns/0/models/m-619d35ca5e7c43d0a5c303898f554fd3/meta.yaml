@@ -1,0 +1,10 @@
+artifact_location: file:///home/ale/git/MLOps/linear_regression/mlruns/0/models/m-619d35ca5e7c43d0a5c303898f554fd3/artifacts
+creation_timestamp: 1752433389135
+experiment_id: '0'
+last_updated_timestamp: 1752433391048
+model_id: m-619d35ca5e7c43d0a5c303898f554fd3
+model_type: null
+name: model
+source_run_id: 9d76494000504fe0b19e3375108fdb45
+status: 2
+status_message: null

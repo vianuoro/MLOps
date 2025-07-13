@@ -1,0 +1,14 @@
+artifact_uri: file:///home/ale/git/MLOps/linear_regression/mlruns/0/9d76494000504fe0b19e3375108fdb45/artifacts
+end_time: 1752433391069
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d76494000504fe0b19e3375108fdb45
+run_name: luxuriant-trout-274
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752433389124
+status: 3
+tags: []
+user_id: ale
