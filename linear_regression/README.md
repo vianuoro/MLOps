@@ -35,3 +35,6 @@ curl -X POST http://127.0.0.1:1235/invocations   -H "Content-Type: application/j
           "data": [[0.5], [0.2]]
         }
       }'
+
+## Promote version 3 to production
+python3 promote_model.py LinearRegressionModel 4 Production
